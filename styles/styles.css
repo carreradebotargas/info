@@ -1,0 +1,2285 @@
+/*	PARA ESCRIBIR UN COLOR NO ES NECESARIO PONER EL HEXADECIMAL, SOLO ESCRIBE LA VARIABLE. EJEMPLO: color: var(--azul);*/ :root {
+  --rosa5: #d4145a;
+  --rosa4: #e50b60;
+  --rosa3: #e7397e;
+  --rosa2: #ff459a;
+  --rosa1: #e986b5;
+  --naranja4: #e71f44;
+  --naranja3: #f15a24;
+  --naranja2: #f7931e;
+  --naranja1: #fbb03b;
+  --beige3: #a67c52;
+  --beige2: #c69c6d;
+  --beige1: #fdebb7;
+  --azul: #66a8de;
+}
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+/* FONTS */
+@font-face {
+  font-family: "Century";
+  src: url("../fonts/CenturyGothic.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Ocelot";
+  src: url("../fonts/WildOcelot.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* DESIGN */
+
+.desktop {
+  display: block !important;
+  overflow: auto !important;
+  scroll-snap-type: y mandatory;
+}
+
+.mobile {
+  display: none !important;
+  overflow: hidden !important;
+  scroll-snap-type: y mandatory;
+}
+
+* {
+  box-sizing: border-box;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+html {
+  scroll-snap-type: y mandatory;
+}
+body {
+  width: 100%;
+  /*height: 10000px !important;*/
+  margin: 0 0 0 0;
+  box-sizing: border-box;
+  background-color: rgba(45, 2, 79, 0.769);
+  scroll-snap-type: y mandatory;
+}
+header {
+  width: 100%;
+  height: 200px;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+18,000000+80&1+20,0.6+59,0+100 */
+background: -moz-linear-gradient(top,  rgba(0,0,0,1) 18%, rgba(0,0,0,1) 20%, rgba(0,0,0,0.6) 59%, rgba(0,0,0,0.29) 80%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 18%,rgba(0,0,0,1) 20%,rgba(0,0,0,0.6) 59%,rgba(0,0,0,0.29) 80%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(0,0,0,1) 18%,rgba(0,0,0,1) 20%,rgba(0,0,0,0.6) 59%,rgba(0,0,0,0.29) 80%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+  position: fixed;
+  top: 0;
+  font-family: Century;
+  color: #fff;
+  z-index: 100;
+}
+.header-univa{
+  width: 100%;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+37,000000+74&1+40,0.15+94 */
+background: -moz-linear-gradient(top,  rgba(0,0,0,1) 37%, rgba(0,0,0,1) 40%, rgba(0,0,0,0.46) 74%, rgba(0,0,0,0.15) 94%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 37%,rgba(0,0,0,1) 40%,rgba(0,0,0,0.46) 74%,rgba(0,0,0,0.15) 94%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(0,0,0,1) 37%,rgba(0,0,0,1) 40%,rgba(0,0,0,0.46) 74%,rgba(0,0,0,0.15) 94%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#26000000',GradientType=0 ); /* IE6-9 */
+}
+.univa-logo {
+  width: 50%;
+  height: 10px;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 10px;
+}
+.univa-logo > img {
+  width: 30%;
+  height: auto;
+  margin-top: 2.5vh;
+}
+.snap-top {
+  scroll-snap-align: start;
+}
+.snap-mid {
+  scroll-snap-align: center;
+}
+.header-menu-active {
+  background-color: rgba(0, 0, 0, .5);
+}
+.header-container {
+  width: 100%;
+  height: 200px;
+  padding-left: 82px;
+  padding-right: 82px;
+}
+.header-chiquito {
+	height: 120px !important;
+}
+.header-left {
+  width: 50%;
+  float: left;
+}
+.header-right {
+  width: 50%;
+  max-width: 250px;
+  float: right;
+  position: relative;
+}
+.logo-cidcap {
+  width: 250px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.cidcap-logo-w {
+  width: 80%;
+  height: auto;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.cidcap-logo-b {
+  width: 80%;
+  height: auto;
+  display: none;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.logo-cidcap:hover {
+  background-color: #fff;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.logo-cidcap:hover > .cidcap-logo-w {
+  display: none;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.logo-cidcap:hover > .cidcap-logo-b {
+  display: block;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.header-text {
+  width: 250px;
+  height: 200px;
+  color: #fff;
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.header-text-arriba {
+  width: 250px;
+  height: 200px;
+  color: #fff;
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.header-text-arriba-2 {
+  width: 250px;
+  height: 200px;
+  color: #fff;
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.header-right > a {
+  text-decoration: none;
+}
+.menu-opciones {
+  width: 250px;
+  position: absolute;
+  top: 200px;
+  right: -500px;
+  display: block;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.menu-normal {
+  top: 120px !important;
+}
+.header-option {
+	background-color: rgba(0, 0, 0, .5);
+	height: 80px;
+	opacity: 1;
+}
+.header-link {
+  color: #fff;
+  display: block;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.header-text:hover {
+  color: #000;
+  background-color: #fff;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.header-text-arriba:hover {
+  color: #000 !important;
+  background-color: #fff;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+.header-link-menu {
+  color: #fff;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.header-text:hover > .header-link-menu {
+  color: #000;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.header-text:hover > .header-link {
+  color: #000;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.header-text-arriba:hover > .header-link-menu {
+  color: #000;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.header-text-arriba:hover > .header-link {
+  color: #000;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.menu:hover {
+  cursor: pointer;
+}
+.fondo-index{
+  background-image: url("../images/fondo.png");
+  width: 100%;
+  height: 100vh;
+  overflow-y: hidden !important;
+  position: relative;
+  scroll-snap-align: start;
+}
+.fondo-acerca{
+  width: 100%;
+  height: 100vh;
+  overflow-y: hidden !important;
+  position: fixed;
+  z-index: 200;
+}
+.ocelote {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: -10vh;
+}
+.abajo {
+  width: 10vw;
+      position: absolute;
+      bottom: 5vh;
+      left: 0;
+      right: 0;
+      margin: auto;
+      animation-name: abajo;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+}
+.conferencias-fondo {
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: start;
+  overflow-y: hidden;
+  position: relative;
+  text-align: center;
+  overflow-y: hidden !important;
+  scroll-snap-align: start;
+}
+.conferencias-fondo-video {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+}
+.conferencias-fondo-video-talleres {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+}
+.container-revez {
+  width: 100%;
+  height: auto;
+  background-color: #000;
+  overflow-y: hidden;
+  position: relative;
+  scroll-snap-align: start;
+}
+.container-revez:hover > .container-mitad-revez > .imagen-acerca-de {
+  opacity: 0.8;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.container-mitad-revez {
+  width: 50%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  float: right;
+}
+.imagen-acerca-de {
+  width: 100%;
+  height: auto;
+  opacity: 1;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.mitad-fondo-revez {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("../images/fondo-cuadrado.png");
+  padding: 120px 80px 80px 80px;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.container-revez:hover > .mitad-fondo-revez {
+  background-image: url("../images/fondo-cuadrado-hover.png");
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.container-mitad-texto {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  color: var(--beige1);
+  font-family: Ocelot;
+  position: relative;
+  word-wrap: break-word;
+  padding-top: 20px;
+}
+.container-mitad-texto-2 {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  color: var(--beige1);
+  font-family: Ocelot;
+  position: relative;
+  word-wrap: break-word;
+  padding-top: 5px;
+}
+.conocenos {
+  text-decoration: none;
+  color: var(--naranja2);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.conocenos:hover > h2 {
+  color: var(--beige1);
+  font-size: 4vw;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+.container-normal-2 {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  overflow-y: hidden;
+  position: relative;
+  scroll-snap-align: start;
+}
+.container-normal {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  overflow-y: hidden;
+  position: relative;
+  scroll-snap-align: start;
+}
+.container-normal:hover > .container-mitad > .imagen-acerca-de {
+  opacity: 0.8;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.container-mitad {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  float: left;
+}
+.imagen-acerca-de {
+  width: 100%;
+  height: 100vh;
+  opacity: 1;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.imagen-acerca-de-1 {
+  width: 100%;
+  height: 100vh;
+  opacity: 1;
+  background-image: url('../images/ponentes/Xun-Sero.png');
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.imagen-acerca-de-2 {
+  width: 100%;
+  height: 100vh;
+  opacity: 1;
+  background-image: url('../images/ponentes/Eduardo-Moreno.png');
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.imagen-acerca-de-3 {
+  width: 100%;
+  height: 100vh;
+  opacity: 1;
+  background-image: url('../images/ponentes/Cabezas-Cuadradas.png');
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.imagen-acerca-de-4 {
+  width: 100%;
+  height: 100vh;
+  opacity: 1;
+  background-image: url('../images/ponentes/AbueloRetrowave.png');
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.imagen-acerca-de-5 {
+  width: 100%;
+  height: 100vh;
+  opacity: 1;
+  background-image: url('../images/ponentes/Elenamics.png');
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.imagen-acerca-de-6 {
+  width: 100%;
+  height: 100vh;
+  opacity: 1;
+  background-image: url('../images/ponentes/Robotpencil.png');
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.imagen-acerca-de-7 {
+  width: 100%;
+  height: 100vh;
+  opacity: 1;
+  background-image: url('../images/ponentes/Felipe-Zamora.png');
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.imagen-acerca-de-8 {
+  width: 100%;
+  height: 100vh;
+  opacity: 1;
+  background-image: url('../images/acerca-de.png');
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.imagen-acerca-de-9 {
+  width: 100%;
+  height: 100vh;
+  opacity: 1;
+  background-image: url('../images/galeria/fotos/3.png');
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.imagen-acerca-de-10 {
+  width: 100%;
+  height: 100vh;
+  opacity: 1;
+  background-image: url('../images/galeria/fotos/5.png');
+  background-size: cover;
+  background-position: right;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.imagen-acerca-de-11 {
+  width: 100%;
+  height: 100vh;
+  opacity: 1;
+  background-image: url('../images/galeria/fotos/2.png');
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.mitad-fondo {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url("../images/fondo-cuadrado.png");
+  padding: 120px 80px 80px 80px;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.container-normal:hover > .mitad-fondo {
+  background-image: url("../images/fondo-cuadrado-hover.png");
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+h1 {
+  font-size: 5vw;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+h2 {
+  font-size: 3vw;
+  font-family: Ocelot;
+  color: #d43a14;
+  padding-bottom: 10px;
+  text-shadow: 1px 1px 0 #FFFFFF;
+  transition: all 0.1s ease-in-out;
+}
+
+h3 {
+  font-size: 3vw;
+  font-family: Ocelot;
+  color: var(--naranja2);
+  padding-bottom: 10px;
+  transition: all 0.1s ease-in-out;
+}
+
+h4 {
+  font-size: 1.5vw;
+  font-family: Century;
+}
+h5 {
+  font-size: 2vw;
+  font-family: Century;
+}
+h4 > p {
+  margin-bottom: 1vw;
+  font-size: 1.5vw;
+}
+h4 > p > a {
+  font-size: 1.2vw;
+}
+
+p > a{
+  text-decoration: none;
+  color: var(--azul);
+  font-size: 2vw;
+}
+p > a:hover{
+  color: var(--rosa3);
+}
+.links {
+  margin-top: 50px;
+}
+.cidcap {
+  position: relative;
+  width: 50%;
+  margin-bottom: 5vh;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.conocenos {
+  text-decoration: none;
+  color: var(--naranja2);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-bottom: 0;
+}
+.conocenos:hover > h2 {
+  color: var(--beige1);
+  font-size: 4vw;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.pared-form {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  color: black;
+  font-family: Century;
+  position: relative;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.pared {
+  width: 100%;
+	height: 100vh;
+	padding: 100px 100px 100px 100px;
+	position: relative;
+	display: flex;
+	z-index: 10;
+	overflow-y: hidden !important;
+	background-image: url("../images/pared.png");
+  background-size: 100% 100%;
+	-webkit-transition: all 0.35s ease-in-out;
+	-moz-transition: all 0.35s ease-in-out;
+	transition: all 0.35s ease-in-out;
+  scroll-snap-align: start;
+}
+.pared:hover {
+  background-image: url("../images/pared-hover.png");
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.vacio-h {
+  width: 100%;
+  height: 100vh;
+}
+.stickers {
+  width: 30%;
+  position: absolute;
+  top: 10vh;
+  left: 0;
+}
+.mamadisimo {
+  width: 55%;
+  position: absolute;
+  bottom: 10vh;
+  left: 0;
+}
+.ocelote-mamadisimo-gde {
+  width: 40%;
+  position: absolute;
+  margin-top: 20vh;
+  top: 0;
+  right: 50px;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  z-index: 10;
+}
+.pared:hover > .ocelote-mamadisimo-gde {
+  margin-top: 10vh;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  z-index: 10;
+}
+.cuadro {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  float: left;
+  z-index: 10;
+  position: relative;
+  scroll-snap-align: start;
+  overflow-y: hidden !important;
+}
+.vacio {
+  width: 100%;
+  height: auto;
+}
+.cuadro-conferencias {
+  position: relative;
+  background-image: url(../images/conferencias.png);
+  background-size: cover;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.cuadro-conferencias:hover {
+  background-image: url(../images/conferencias-hover.png);
+  background-size: cover;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.conferencias {
+  position: absolute;
+  width: 60%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.cuadro-conferencias:hover > .conferencias {
+  transform: scale(1.1);
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.cuadro-talleres {
+  position: relative;
+  background-image: url(../images/talleres.png);
+  background-size: cover;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.cuadro-talleres:hover {
+  background-image: url(../images/talleres-hover.png);
+  background-size: cover;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.talleres {
+  position: absolute;
+  width: 60%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.cuadro-talleres:hover > .talleres {
+  transform: scale(1.1);
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.cuadro-patrocinadores {
+  position: relative;
+  background-image: url(../images/patrocinadores.png);
+  background-size: cover;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.cuadro-patrocinadores:hover {
+  background-image: url(../images/patrocinadores-hover.png);
+  background-size: cover;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.patrocinadores {
+  position: absolute;
+  width: 65%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.cuadro-patrocinadores:hover > .patrocinadores {
+  transform: scale(1.1);
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.cuadro-cede {
+  position: relative;
+  background-image: url(../images/cede.png);
+  background-size: cover;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.cuadro-cede:hover {
+  background-image: url(../images/cede-hover.png);
+  background-size: cover;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.cuadro-galeria-2 {
+  display: block;
+  position: relative;
+  background-image: url(../images/galeria.png);
+  background-size: 100%;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.cuadro-galeria-2:hover {
+  background-image: url(../images/galeria-hover.png);
+  background-size: cover;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.cede {
+  position: absolute;
+  width: 60%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.cuadro-cede:hover > .cede {
+  transform: scale(1.1);
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.galeria {
+  position: absolute;
+  width: 35%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.cuadro-galeria:hover > .galeria {
+  transform: scale(1.1);
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.cuadro-galeria {
+  background-color: #000;
+}
+.cuadro-galeria-titulo {
+  display: block;
+  position: relative;
+  background-image: url(../images/fondo-cuadrado.png);
+  background-size: cover;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.a-galeria:hover > .cuadro-galeria-titulo {
+  background-image: url(../images/fondo-cuadrado-hover.png);
+  background-size: cover;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.galeria-titulo {
+  position: absolute;
+  width: 70%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.container {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto auto auto auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "foto1 foto2 foto3 foto3"
+    "foto4 foto4 foto5 foto6"
+    "foto4 foto4 foto5 foto7"
+    "foto8 foto9 foto9 mas";
+}
+.foto1 {
+  grid-area: foto1;
+}
+.foto2 {
+  grid-area: foto2;
+}
+.foto3 {
+  grid-area: foto3;
+}
+.foto4 {
+  grid-area: foto4;
+}
+.foto5 {
+  grid-area: foto5;
+}
+.foto6 {
+  grid-area: foto6;
+}
+.foto7 {
+  grid-area: foto7;
+}
+.foto8 {
+  grid-area: foto8;
+}
+.foto9 {
+  grid-area: foto9;
+}
+.mas {
+  grid-area: mas;
+}
+.galeria-mini {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 1;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.galeria-mini:hover {
+  opacity: 0.8;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.pared-form {
+  position: relative;
+}
+.social-media {
+  z-index: 90;
+}
+.facebook {
+	position: absolute;
+	top: 10vh;
+	left: 0;
+	margin-top: 15px;
+	margin-left: 75px;
+  opacity: 1;
+}
+.twitter {
+	position: absolute;
+	top: 10vh;
+	left: 0;
+	margin-top: 15px;
+	margin-left: 145px;
+  opacity: 1;
+}
+.instagram {
+	position: absolute;
+	top: 10vh;
+	left: 0;
+	margin-top: 15px;
+	margin-left: 215px;
+  opacity: 1;
+}
+.facebook:hover {
+  opacity: 0.8;
+}
+.twitter:hover {
+  opacity: 0.8;
+}
+.instagram:hover {
+  opacity: 0.8;
+}
+.titulo-form {
+  position: absolute;
+  width: 40%;
+  bottom: 20vh;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  z-index: 50;
+}
+.form-div {
+  width: 55%;
+  position: absolute;
+  bottom: 10vh;
+  right: 0;
+  padding: 80px 80px 80px 80px;
+}
+.form {
+  width: 100%;
+}
+.form > input, label, button, textarea {
+  display: block;
+  width: 90%;
+}
+.form > label, button {
+  font-family: Century;
+  color: #000;
+  font-size: 20pt;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.form > input, button {
+  font-family: Century;
+  color: #fff;
+  font-size: 14pt;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: none;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.form > button:hover {
+  background-color: rgba(200, 200, 200, 1.0);
+  color: #000;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  cursor: pointer;
+}
+.form > textarea {
+  font-family: Century;
+  color: #fff;
+  font-size: 14pt;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: rgba(0, 0, 0, 0.8);
+  outline: none;
+  border: none;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.footer-rosa {
+  width: 100%;
+  height: 80px;
+  margin-bottom: -10px;
+}
+.footer {
+  width: 100%;
+  height: 400px;
+  background-image: url(../images/fondo.png);
+  background-size: auto;
+  position: relative;
+}
+.footer-2 {
+  scroll-snap-align: end;
+}
+.ocelotes-guardianes {
+  width: 90%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.frase-footer {
+  width: 60%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.copy{
+  width: 100%;
+  height: 50px;
+  padding-top: 15px;
+  text-align: center;
+  font-family: Century;
+  color: white;
+  position: absolute;
+  bottom: 0;
+}
+
+.container-galeria {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: auto auto auto auto auto auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "foto1 foto2 foto3"
+    "foto4 foto5 foto6"
+    "foto7 foto8 foto9"
+    "foto10 foto11 foto12"
+    "foto13 foto14 foto15"
+    "foto16 foto17 foto18";
+}
+
+.container-galeria > div {
+  scroll-snap-align: start;
+}
+
+.galeria-foto1 { grid-area: foto1; }
+
+.galeria-foto2 { grid-area: foto2;  }
+
+.galeria-foto3 { grid-area: foto3;  }
+
+.galeria-foto4 { grid-area: foto4;  }
+
+.galeria-foto5 { grid-area: foto5;  }
+
+.galeria-foto6 { grid-area: foto6;  }
+
+.galeria-foto7 { grid-area: foto7;  }
+
+.galeria-foto8 { grid-area: foto8;  }
+
+.galeria-foto9 { grid-area: foto9;  }
+
+.galeria-foto10 { grid-area: foto10;  }
+
+.galeria-foto11 { grid-area: foto11;  }
+
+.galeria-foto12 { grid-area: foto12;  }
+
+.galeria-foto13 { grid-area: foto13;  }
+
+.galeria-foto14 { grid-area: foto14;  }
+
+.galeria-foto15 { grid-area: foto15;  }
+
+.galeria-foto16 { grid-area: foto16;  }
+
+.galeria-foto17 { grid-area: foto17;  }
+
+.galeria-foto18 { grid-area: foto18;  }
+
+.galeria-foto {
+  width: 100%;
+  height: auto;
+}
+
+.container-galeria > div {
+  width: 100%;
+  height: auto;
+  margin-bottom: -10px;
+}
+
+.portada-galeria {
+  width: 100%;
+  height: auto;
+  margin-bottom: -10px;
+}
+
+
+
+
+/* TALLERES STYLE */
+.tallersitos {
+  width: 100%;
+  position: relative;
+  float: left;
+}
+
+.cuadrito {
+  width: 50%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  float: left;
+  z-index: 10;
+  position: relative;
+  scroll-snap-align: center;
+}
+.cuadrito2 {
+  width: 50%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  float: left;
+  z-index: 10;
+  position: relative;
+  scroll-snap-align: start;
+}
+
+.taller-amplio {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  scroll-snap-align: center;
+}
+.tallerchiquito {
+  width: 100%;
+  height: auto;
+  display: flex;
+  text-align: center;
+  scroll-snap-align: center;
+}
+
+.taller1{
+  width: 100%;
+  height: 40vh;
+  display: block;
+  background-image: url('../images/talleres/normal/elementos-taller-01.png');
+  background-size: cover;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.taller1:hover{
+  width: 100%;
+  height: 40vh;
+  display: block;
+  background-image: url('../images/talleres/hover/elementos-taller-hover-01.png');
+  background-size: cover;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.tallerchiquito {
+  width: 100%;
+  height: auto;
+  display: flex;
+  text-align: center;
+}
+.taller2{
+  width: 50%;
+  height: 35vh;
+  display: block;
+  background-image: url('../images/talleres/normal/elementos-taller-02.png');
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.taller2:hover{
+  width: 50%;
+  height: 35vh;
+  display: block;
+  background-image: url('../images/talleres/hover/elementos-taller-hover-02.png');
+  background-size: cover;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.taller3{
+  width: 50%;
+  height: 35vh;
+  display: block;
+  background-image: url('../images/talleres/normal/elementos-taller-03.png');
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.taller3:hover{
+  width: 50%;
+  height: 35vh;
+  display: block;
+  background-image: url('../images/talleres/hover/elementos-taller-hover-03.png');
+  background-size: cover;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.taller4{
+  width: 50%;
+  height: 35vh;
+  display: block;
+  background-image: url('../images/talleres/normal/elementos-taller-04.png');
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.taller4:hover{
+  width: 50%;
+  height: 35vh;
+  display: block;
+  background-image: url('../images/talleres/hover/elementos-taller-hover-04.png');
+  background-size: cover;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.taller5{
+  width: 50%;
+  height: 35vh;
+  display: block;
+  background-image: url('../images/talleres/normal/elementos-taller-05.png');
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.taller5:hover{
+  width: 50%;
+  height: 35vh;
+  display: block;
+  background-image: url('../images/talleres/hover/elementos-taller-hover-05.png');
+  background-size: cover;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.taller6{
+  width: 100%;
+  height: 40vh;
+  display: block;
+  background-image: url('../images/talleres/normal/elementos-taller-06.png');
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.taller6:hover{
+  width: 100%;
+  height: 40vh;
+  display: block;
+  background-image: url('../images/talleres/hover/elementos-taller-hover-06.png');
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.taller7{
+  width: 50%;
+  height: 35vh;
+  display: block;
+  background-image: url('../images/talleres/normal/elementos-taller-07.png');
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.taller7:hover{
+  width: 50%;
+  height: 35vh;
+  display: block;
+  background-image: url('../images/talleres/hover/elementos-taller-hover-07.png');
+  background-size: cover;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.taller8{
+  width: 50%;
+  height: 35vh;
+  display: block;
+  background-image: url('../images/talleres/normal/elementos-taller-08.png');
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.taller8:hover{
+  width: 50%;
+  height: 35vh;
+  display: block;
+  background-image: url('../images/talleres/hover/elementos-taller-hover-08.png');
+  background-size: cover;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.taller9{
+  width: 50%;
+  height: 35vh;
+  display: block;
+  background-image: url('../images/talleres/normal/elementos-taller-09.png');
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.taller9:hover{
+  width: 50%;
+  height: 35vh;
+  display: block;
+  background-image: url('../images/talleres/hover/elementos-taller-hover-09.png');
+  background-size: cover;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.taller10{
+  width: 50%;
+  height: 35vh;
+  display: block;
+  background-image: url('../images/talleres/normal/elementos-taller-10.png');
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.taller10:hover{
+  width: 50%;
+  height: 35vh;
+  display: block;
+  background-image: url('../images/talleres/hover/elementos-taller-hover-10.png');
+  background-size: cover;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.taller11{
+  width: 100%;
+  height: 35vh;
+  display: block;
+  background-image: url('../images/talleres/normal/elementos-taller-11.png');
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.taller11:hover{
+  width: 100%;
+  height: 35vh;
+  display: block;
+  background-image: url('../images/talleres/hover/elementos-taller-hover-11.png');
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.taller12{
+  width: 50%;
+  height: 35vh;
+  display: block;
+  background-image: url('../images/talleres/normal/elementos-taller-12.png');
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.taller12:hover{
+  width: 50%;
+  height: 35vh;
+  display: block;
+  background-image: url('../images/talleres/hover/elementos-taller-hover-12.png');
+  background-size: cover;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.taller13{
+  width: 50%;
+  height: 35vh;
+  display: block;
+  background-image: url('../images/talleres/normal/elementos-taller-13.png');
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.taller13:hover{
+  width: 50%;
+  height: 35vh;
+  display: block;
+  background-image: url('../images/talleres/hover/elementos-taller-hover-13.png');
+  background-size: cover;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.taller14{
+  width: 50%;
+  height: 35vh;
+  display: block;
+  background-image: url('../images/talleres/normal/elementos-taller-14.png');
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.taller14:hover{
+  width: 50%;
+  height: 35vh;
+  display: block;
+  background-image: url('../images/talleres/hover/elementos-taller-hover-14.png');
+  background-size: cover;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.taller15{
+  width: 50%;
+  height: 35vh;
+  display: block;
+  background-image: url('../images/talleres/normal/elementos-taller-15.png');
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.taller15:hover{
+  width: 50%;
+  height: 35vh;
+  display: block;
+  background-image: url('../images/talleres/hover/elementos-taller-hover-15.png');
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+.taller16{
+  width: 50%;
+  height: 35vh;
+  display: block;
+  background-image: url('../images/talleres/normal/elementos-taller-16.png');
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.taller16:hover{
+  width: 50%;
+  height: 35vh;
+  display: block;
+  background-image: url('../images/talleres/hover/elementos-taller-hover-16.png');
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+.taller17{
+  width: 50%;
+  height: 35vh;
+  display: block;
+  background-image: url('../images/talleres/normal/elementos-taller-17.png');
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.taller17:hover{
+  width: 50%;
+  height: 35vh;
+  display: block;
+  background-image: url('../images/talleres/hover/elementos-taller-hover-17.png');
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+.taller18{
+  width: 100%;
+  height: 40vh;
+  display: block;
+  background-image: url('../images/talleres/normal/elementos-taller-18.png');
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.taller18:hover{
+  width: 100%;
+  height: 40vh;
+  display: block;
+  background-image: url('../images/talleres/hover/elementos-taller-hover-18.png');
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+
+/*CEDE*/
+
+.cede-fondo {
+  width: 100%;
+}
+
+.foto-cede {
+  width: 100%;
+  height: 100vh;
+  display: block;
+  float: left;
+  opacity: 1;
+  z-index: 50;
+  scroll-snap-align: start;
+}
+
+.foto-cede:hover {
+  opacity: 0.8;
+}
+
+.foto-cede1 {
+  background-image: url("../images/cede/foto1.png");
+  background-size: cover;
+}
+.foto-cede2 {
+  background-image: url("../images/cede/foto2.png");
+  background-size: cover;
+}
+.foto-cede3 {
+  background-image: url("../images/cede/foto3.png");
+  background-size: cover;
+}
+.foto-cede4 {
+  background-image: url("../images/cede/foto4.png");
+  background-size: cover;
+}
+.foto-cede5 {
+  background-image: url("../images/cede/foto5.png");
+  background-size: cover;
+}
+.foto-cede6 {
+  background-image: url("../images/cede/foto6.png");
+  background-size: cover;
+}
+
+/* MASTERCLASS STYLE */
+.masterclass {
+  width: 100%;
+  position: relative;
+  float: left;
+  padding-top: 5px;
+}
+
+.cuadrito2 {
+  width: 50%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  float: left;
+  z-index: 10;
+  position: relative;
+}
+
+
+.masterclass1{
+  width: 100%;
+  height: auto;
+  display: flex;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.masterclass1none {
+  width: 50%;
+  height: auto;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.masterclass1hover {
+  width: 50%;
+  height: auto;
+  display: none;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+} 
+
+.masterclass1:hover > .masterclass1none {
+  display: none;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.masterclass1:hover > .masterclass1hover {
+  display: block;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+.masterclass2{
+  width: 100%;
+  height:auto;
+  display: flex;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.masterclass2none {
+  width: 50%;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.masterclass2hover {
+  width: 50%;
+  height: auto;
+  display: none;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+} 
+
+.masterclass2:hover > .masterclass2none {
+  display: none;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.masterclass2:hover > .masterclass2hover {
+  display: block;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+.masterclass3{
+  width: 100%;
+  height:auto;
+  display: flex;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.masterclass3none {
+  width: 50%;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.masterclass3hover {
+  width: 50%;
+  height: auto;
+  display: none;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+} 
+
+.masterclass3:hover > .masterclass3none {
+  display: none;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.masterclass3:hover > .masterclass3hover {
+  display: block;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.masterclass4{
+  width: 100%;
+  height:auto;
+  display: flex;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.masterclass4none {
+  width: 50%;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.masterclass4hover {
+  width: 50%;
+  height: auto;
+  display: none;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+} 
+
+.masterclass4:hover > .masterclass4none {
+  display: none;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.masterclass4:hover > .masterclass4hover {
+  display: block;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+.masterclass5{
+  width: 100%;
+  height:auto;
+  display: flex;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.masterclass5none {
+  width: 50%;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.masterclass5hover {
+  width: 50%;
+  height: auto;
+  display: none;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+} 
+
+.masterclass5:hover > .masterclass5none {
+  display: none;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.masterclass5:hover > .masterclass5hover {
+  display: block;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.masterclass6{
+  width: 100%;
+  height:auto;
+  display: flex;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.masterclass6none {
+  width: 50%;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.masterclass6hover {
+  width: 50%;
+  height: auto;
+  display: none;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+} 
+
+.masterclass6:hover > .masterclass6none {
+  display: none;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.masterclass6:hover > .masterclass6hover {
+  display: block;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.masterclass7{
+  width: 100%;
+  height:auto;
+  display: flex;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.masterclass7none {
+  width: 50%;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.masterclass7hover {
+  width: 50%;
+  height: auto;
+  display: none;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+} 
+
+.masterclass7:hover > .masterclass7none {
+  display: none;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.masterclass7:hover > .masterclass7hover {
+  display: block;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.masterclass8{
+  width: 100%;
+  height:auto;
+  display: flex;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.masterclass8none {
+  width: 50%;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.masterclass8hover {
+  width: 50%;
+  height: auto;
+  display: none;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+} 
+
+.masterclass8:hover > .masterclass8none {
+  display: none;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.masterclass8:hover > .masterclass8hover {
+  display: block;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+.masterclass-img {
+  width: 50%;
+}
+
+/* PATROCINIOS STYLE */
+
+.patrocinios {
+  width: 100%;
+  position: relative;
+  float: left;
+  padding-top: 5px;
+  background-color: white;
+  scroll-snap-align: center;
+}
+
+.cuadrito3 {
+  width: 50%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  float: left;
+  z-index: 10;
+  position: relative;
+  scroll-snap-align: center;
+}
+
+.patrocinio1{
+  width: 100%;
+  height: auto;
+  display: flex;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.patrocinio2{
+  width: 100%;
+  height: auto;
+  display: flex;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.patrocinio3{
+  width: 100%;
+  height: auto;
+  display: flex;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.patrocinio4{
+  width: 100%;
+  height: auto;
+  display: flex;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.patrocinio5{
+  width: 100%;
+  height: auto;
+  display: flex;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.patrocinio6{
+  width: 100%;
+  height: auto;
+  display: flex;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.patrocinio7{
+  width: 100%;
+  height: auto;
+  display: flex;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.patrocinio8{
+  width: 100%;
+  height: auto;
+  display: flex;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.patrocinio9{
+  width: 100%;
+  height: auto;
+  display: flex;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.patrocinio10{
+  width: 100%;
+  height: auto;
+  display: flex;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/*------AGENDA------*/
+.programa img {
+  width: 90%;
+  height: auto;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100px;
+  margin: auto;
+}
+
+/*------VISUALIZADOR DE FOTOS------*/
+.visualizador {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  position: fixed;
+  top: -2000px;
+  visibility: visible;
+  z-index: 100;
+}
+
+.oculto {
+  visibility: hidden;
+}
+
+.proximamente {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Century;
+  color: #fff;
+  background-image: url(../images/actualidad/fondo-grunge.png);
+  background-size: cover;
+  flex-direction: row;
+}
+
+.mitad-ocelote {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mitad-ocelote > img {
+  width: 70%;
+  height: auto;
+  max-height: fit-content;
+}
+
+.casi {
+  width: 50%;
+  font-size: 2vw;
+  position: absolute;
+  bottom: 5vh;
+  left: 46%;
+  right: 0;
+}
+
+.glitch {
+  font-size: 8vw;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+
+  text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+    -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+    0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+
+  animation: glitch 500ms infinite;
+}
+
+.glitch span {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.glitch span:first-child {
+  animation: glitch 650ms infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+  transform: translate(-0.025em, -0.0125em);
+  /* color: green; */
+  opacity: 0.8;
+}
+
+.glitch span:last-child {
+  animation: glitch 375ms infinite;
+  clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
+  transform: translate(0.0125em, 0.025em);
+  /* color: red; */
+  opacity: 0.8;
+}
+
+/* https://web.dev/prefers-reduced-motion/#(bonus)-forcing-reduced-motion-on-all-websites */
+
+@keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+      -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  14% {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+      -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  15% {
+    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+      0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  49% {
+    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+      0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  50% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+      0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  99% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+      0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  100% {
+    text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75),
+      -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
+  }
+}
+
+.contenedor {
+  width: 100%;
+  width: 100vh;
+  background-color: #000;
+  scroll-snap-align: start;
+}

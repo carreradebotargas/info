@@ -1,0 +1,1364 @@
+@media screen and (max-width:900px) {
+  .header-container {
+    width: 100%;
+    height: 160px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (max-width:1400px) {
+  .ocelote {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+
+/*------VERSIÓN CELULAR 500PX------*/
+
+@media screen and (max-width:500px){
+
+  .header-container {
+    width: 100%;
+    height: 100px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .univa-logo {
+    width: 90%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 30px;
+  }
+  .univa-logo > img {
+    width: 30%;
+    height: auto;
+    margin-top: 1vh;
+  }
+  .header-text-arriba {
+    width: 20vw;
+    height: 120px;
+    color: #fff;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+  }
+  .header-text-arriba-2 {
+    width: 20vw;
+    height: 120px;
+    color: #fff;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+  }
+  .menu {
+    right: 5vw;
+  }
+  .menu-opciones {
+    width: 50vw;
+    position: absolute;
+    top: 100px;
+    right: -500px;
+    display: block;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+  }
+    .desktop {
+        display: none !important;
+        overflow: hidden !important;
+        scroll-snap-type: y mandatory;
+      }
+      
+      .mobile {
+        display: block !important;
+        overflow: auto !important;
+        scroll-snap-type: y mandatory;
+      }
+
+      body {
+        width: 100%;
+        /*height: 10000px !important;*/
+        margin: 0 0 0 0;
+        box-sizing: border-box;
+        background-color: rgba(45, 2, 79, 0.769);
+        scroll-snap-type: y mandatory;
+      }
+
+
+      h1 {
+        font-size: 5vw;
+        -webkit-transition: all 0.1s ease-in-out;
+        -moz-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out;
+      }
+      
+      h2 {
+        font-size: 8vw;
+        font-family: Ocelot;
+        color: #d43a14;
+        padding-bottom: 10px;
+        text-shadow: 1px 1px 0 #FFFFFF;
+        transition: all 0.1s ease-in-out;
+      }
+      .conocenos:hover > h2 {
+        color: var(--beige1);
+        font-size: 10vw;
+        -webkit-transition: all 0.1s ease-in-out;
+        -moz-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out;
+      }
+      
+      h3 {
+        font-size: 10vw;
+        font-family: Ocelot;
+        color: var(--naranja2);
+        padding-bottom: 10px;
+        transition: all 0.1s ease-in-out;
+      }
+      
+      h4 {
+        font-size: 1.5vw;
+        font-family: Century;
+      }
+      h5 {
+        font-size: 4vw;
+        font-family: Century;
+      }
+      h4 > p {
+        margin-bottom: 1vw;
+        font-size: 3vw;
+      }
+      h4 > p > a {
+        font-size: 3vw;
+      }
+      
+      p > a{
+        text-decoration: none;
+        color: var(--azul);
+        font-size: 2vw;
+      }
+      p > a:hover{
+        color: var(--rosa3);
+      }
+      .links {
+        margin-top: 50px;
+      }
+
+    header {
+      width: 100%;
+      height: 300px;
+   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+14,000000+54,000000+54,000000+100&1+30,0.6+60,0.4+79,0+100 */
+background: -moz-linear-gradient(top,  rgba(0,0,0,1) 14%, rgba(0,0,0,1) 30%, rgba(0,0,0,0.68) 54%, rgba(0,0,0,0.6) 60%, rgba(0,0,0,0.4) 79%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 14%,rgba(0,0,0,1) 30%,rgba(0,0,0,0.68) 54%,rgba(0,0,0,0.6) 60%,rgba(0,0,0,0.4) 79%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(0,0,0,1) 14%,rgba(0,0,0,1) 30%,rgba(0,0,0,0.68) 54%,rgba(0,0,0,0.6) 60%,rgba(0,0,0,0.4) 79%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+      position: fixed;
+      top: 0;
+      font-family: Century;
+      color: #fff;
+      z-index: 100;
+    }
+    .header-menu-active {
+      background-color: rgba(0, 0, 0, .5);
+    }
+    .header-chiquito {
+      height: 80px !important;
+    }
+    .header-left {
+      width: 30%;
+      float: left;
+    }
+    .header-right {
+      width: 30%;
+      max-width: 100px;
+      float: right;
+      position: relative;
+    }
+    .logo-cidcap {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .cidcap-logo-w {
+      width: 80%;
+      height: auto;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .cidcap-logo-b {
+      width: 80%;
+      height: auto;
+      display: none;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .logo-cidcap:hover {
+      background-color: #fff;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .logo-cidcap:hover > .cidcap-logo-w {
+      display: none;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .logo-cidcap:hover > .cidcap-logo-b {
+      display: block;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .header-text {
+      width: 100%;
+      height: 100px;
+      color: #fff;
+      float: right;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .header-right > a {
+      text-decoration: none;
+    }
+    
+    .menu-normal {
+      top: 120px !important;
+    }
+    .header-option {
+      background-color: rgba(0, 0, 0, .5);
+      height: 80px;
+      opacity: 1;
+    }
+    .header-link {
+      color: #fff;
+      font-size: 3vw;
+      display: block;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .header-text:hover {
+      color: #000;
+      background-color: #fff;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .header-link-menu {
+      font-size: 3vw;
+      color: #fff;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .header-link-menu-2 {
+      font-size: 3vw;
+      color: #fff;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .header-text:hover > .header-link-menu {
+      color: #000;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .header-text:hover > .header-link {
+      color: #000;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .menu:hover {
+      cursor: pointer;
+    }
+
+    /*------INDEX------*/
+
+    .fondo-index{
+      background-image: url("../images/fondo.png");
+      width: 100%;
+      height: 100vh;
+      overflow-y: hidden;
+      position: relative;
+      scroll-snap-align: start;
+    }
+    .conferencias-fondo {
+      width: 100%;
+      height: 100vh;
+      scroll-snap-align: start;
+      overflow-y: hidden;
+      position: relative;
+      text-align: center;
+      overflow-y: hidden !important;
+    }
+    .ocelote {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      bottom: 0;
+    }
+    .conferencias-fondo-video {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      bottom: 0;
+      display: block;
+      margin: auto;
+    }
+    .conferencias-fondo-video-talleres {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      bottom: 0;
+      display: block;
+      margin: auto;
+    }
+    .abajo {
+      width: 10vw;
+      position: absolute;
+      bottom: 5vh;
+      left: 0;
+      right: 0;
+      margin: auto;
+      animation-name: abajo;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+    @keyframes abajo {
+      0%   {bottom:5vh;}
+      50%  {bottom:8vh;}
+      100% {bottom:5vh;}
+    }
+    .container-revez {
+      width: 100%;
+      height: 100vh;
+      background-color: #000;
+      overflow-y: hidden;
+      position: relative;
+      scroll-snap-align: start;
+    }
+    .container-normal-2 {
+      width: 100%;
+      height: 100vh;
+      background-color: #000;
+      overflow-y: hidden;
+      position: relative;
+      scroll-snap-align: start;
+    }
+
+    .container-mitad {
+      width: 100%;
+      height: 50vh;
+      display: block;
+      align-items: center;
+      float: left;
+    }
+    .container-mitad-revez {
+      width: 100%;
+      height: 50vh;
+      display: block;
+      align-items: center;
+      float: left;
+    }
+    
+    .imagen-acerca-de-8 {
+      width: 100%;
+      height: 50vh;
+      opacity: 1;
+      background-image: url('../images/acerca-de.png');
+      background-size: cover;
+      background-position: center;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+
+    .imagen-acerca-de-9 {
+      width: 100%;
+      height: 50vh;
+      opacity: 1;
+      background-image: url('../images/galeria/fotos/3.png');
+      background-size: cover;
+      background-position: center;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+
+    .imagen-acerca-de-10 {
+      width: 100%;
+      height: 50vh;
+      opacity: 1;
+      background-image: url('../images/galeria/fotos/5.png');
+      background-size: cover;
+      background-position: center;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+
+    .imagen-acerca-de-11 {
+      width: 100%;
+      height: 50vh;
+      opacity: 1;
+      background-image: url('../images/galeria/fotos/2.png');
+      background-size: cover;
+      background-position: center;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+
+    .mitad-fondo {
+      position: relative;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      background-image: url("../images/fondo-cuadrado.png");
+      padding: 30px 30px 30px 30px;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .mitad-fondo-revez {
+      position: relative;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-image: url("../images/fondo-cuadrado.png");
+      padding: 30px 30px 30px 30px;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .container-mitad-texto {
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      color: var(--beige1);
+      font-family: Ocelot;
+      position: relative;
+      word-wrap: break-word;
+      padding-top: 20px;
+    }
+    .container-mitad-texto-2 {
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      color: var(--beige1);
+      font-family: Ocelot;
+      position: relative;
+      word-wrap: break-word;
+      padding-top: -5px;
+    }
+    .conocenos {
+      text-decoration: none;
+      color: var(--naranja2);
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
+
+
+
+
+
+
+    .pared {
+      width: 100%;
+      height: auto;
+      padding: 20px 20px 20px 20px;
+      position: relative;
+      display: block;
+      z-index: 10;
+      overflow-y: hidden !important;
+      background-image: url("../images/pared.png");
+      background-size: 100% 100%;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+      scroll-snap-align: center;
+    }
+    .pared:hover {
+      background-image: url("../images/pared-hover.png");
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .vacio-h {
+      width: 100%;
+      height: auto;
+    }
+  
+    .stickers {
+      width: 30%;
+      position: absolute;
+      top: 20px;
+      left: 0;
+    }
+    .mamadisimo {
+      width: 45%;
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+    }
+    .ocelote-mamadisimo-gde {
+      width: 50%;
+      position: absolute;
+      margin-top: 60px;
+      top: 450;
+      right: 10px;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+      z-index: 10;
+    }
+    .pared:hover > .ocelote-mamadisimo-gde {
+      margin-top: 0px;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+      z-index: 10;
+    }
+
+
+    .cuadro {
+      width: 100%;
+      height: 30vh;
+      display: block;
+      align-items: center;
+      float: left;
+      z-index: 10;
+      position: relative;
+      scroll-snap-align: center;
+      overflow-y: hidden !important;
+    }
+    .vacio {
+  width: 100%;
+  height: auto;
+}
+    .conferencias {
+      position: absolute;
+      width: 60%;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+
+
+
+
+
+    .cuadro-galeria-titulo {
+      display: none !important;
+      position: relative;
+      background-image: url(../images/fondo-cuadrado.png);
+      background-size: cover;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .cuadro-galeria {
+      display: none !important;
+      position: relative;
+      background-image: url(../images/galeria.png);
+      background-size: 100%;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+
+    .imagen-acerca-de-1 {
+      width: 100%;
+      height: 100vh;
+      opacity: 1;
+      background-image: url('../images/ponentes/Xun-Sero.png');
+      background-size: 120% auto;
+      background-position: top;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .imagen-acerca-de-2 {
+      width: 100%;
+      height: 100vh;
+      opacity: 1;
+      background-image: url('../images/ponentes/Eduardo-Moreno.png');
+      background-size: 120% auto;
+      background-position: top;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .imagen-acerca-de-3 {
+      width: 100%;
+      height: 100vh;
+      opacity: 1;
+      background-image: url('../images/ponentes/Cabezas-Cuadradas.png');
+      background-size: 120% auto;
+      background-position: top;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .imagen-acerca-de-4 {
+      width: 100%;
+      height: 100vh;
+      opacity: 1;
+      background-image: url('../images/ponentes/AbueloRetrowave.png');
+      background-size: 120% auto;
+      background-position: top;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .imagen-acerca-de-5 {
+      width: 100%;
+      height: 100vh;
+      opacity: 1;
+      background-image: url('../images/ponentes/Elenamics.png');
+      background-size: 120% auto;
+      background-position: top;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .imagen-acerca-de-6 {
+      width: 100%;
+      height: 100vh;
+      opacity: 1;
+      background-image: url('../images/ponentes/Robotpencil.png');
+      background-size: 120% auto;
+      background-position: top;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .imagen-acerca-de-7 {
+      width: 100%;
+      height: 100vh;
+      opacity: 1;
+      background-image: url('../images/ponentes/Felipe-Zamora.png');
+      background-size: 120% auto;
+      background-position: top;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+
+
+
+
+
+    .tallersitos {
+      width: 100%;
+      position: relative;
+      float: left;
+    }
+    .taller-amplio {
+      width: 100%;
+      height: auto;
+      text-align: center;
+      scroll-snap-align: center;
+    }
+    .taller1{
+      width: 100%;
+      height: 15vh;
+      display: block;
+      background-image: url('../images/talleres/normal/elementos-taller-01.png');
+      background-size: cover;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .taller1:hover{
+      width: 100%;
+      height: 15vh;
+      display: block;
+      background-image: url('../images/talleres/hover/elementos-taller-hover-01.png');
+      background-size: cover;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .tallerchiquito {
+      width: 100%;
+      height: auto;
+      display: flex;
+      text-align: center;
+      scroll-snap-align: center;
+    }
+    .taller2{
+      width: 50%;
+      height: 15vh;
+      display: block;
+      background-image: url('../images/talleres/normal/elementos-taller-02.png');
+      background-size: cover;
+      background-position: center;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .taller2:hover{
+      width: 50%;
+      height: 15vh;
+      display: block;
+      background-image: url('../images/talleres/hover/elementos-taller-hover-02.png');
+      background-size: cover;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .taller3{
+      width: 50%;
+      height: 15vh;
+      display: block;
+      background-image: url('../images/talleres/normal/elementos-taller-03.png');
+      background-size: cover;
+      background-position: center;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .taller3:hover{
+      width: 50%;
+      height: 15vh;
+      display: block;
+      background-image: url('../images/talleres/hover/elementos-taller-hover-03.png');
+      background-size: cover;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .taller4{
+      width: 50%;
+      height: 15vh;
+      display: block;
+      background-image: url('../images/talleres/normal/elementos-taller-04.png');
+      background-size: cover;
+      background-position: center;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .taller4:hover{
+      width: 50%;
+      height: 15vh;
+      display: block;
+      background-image: url('../images/talleres/hover/elementos-taller-hover-04.png');
+      background-size: cover;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .taller5{
+      width: 50%;
+      height: 15vh;
+      display: block;
+      background-image: url('../images/talleres/normal/elementos-taller-05.png');
+      background-size: cover;
+      background-position: center;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .taller5:hover{
+      width: 50%;
+      height: 15vh;
+      display: block;
+      background-image: url('../images/talleres/hover/elementos-taller-hover-05.png');
+      background-size: cover;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .taller6{
+      width: 100%;
+      height: 15vh;
+      display: block;
+      background-image: url('../images/talleres/normal/elementos-taller-06.png');
+      background-size: cover;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .taller6:hover{
+      width: 100%;
+      height: 15vh;
+      display: block;
+      background-image: url('../images/talleres/hover/elementos-taller-hover-06.png');
+      background-size: cover;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .taller7{
+      width: 50%;
+      height: 15vh;
+      display: block;
+      background-image: url('../images/talleres/normal/elementos-taller-07.png');
+      background-size: cover;
+      background-position: center;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .taller7:hover{
+      width: 50%;
+      height: 15vh;
+      display: block;
+      background-image: url('../images/talleres/hover/elementos-taller-hover-07.png');
+      background-size: cover;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .taller8{
+      width: 50%;
+      height: 15vh;
+      display: block;
+      background-image: url('../images/talleres/normal/elementos-taller-08.png');
+      background-size: cover;
+      background-position: center;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .taller8:hover{
+      width: 50%;
+      height: 15vh;
+      display: block;
+      background-image: url('../images/talleres/hover/elementos-taller-hover-08.png');
+      background-size: cover;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .taller9{
+      width: 50%;
+      height: 15vh;
+      display: block;
+      background-image: url('../images/talleres/normal/elementos-taller-09.png');
+      background-size: cover;
+      background-position: center;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .taller9:hover{
+      width: 50%;
+      height: 15vh;
+      display: block;
+      background-image: url('../images/talleres/hover/elementos-taller-hover-09.png');
+      background-size: cover;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .taller10{
+      width: 50%;
+      height: 15vh;
+      display: block;
+      background-image: url('../images/talleres/normal/elementos-taller-10.png');
+      background-size: cover;
+      background-position: center;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .taller10:hover{
+      width: 50%;
+      height: 15vh;
+      display: block;
+      background-image: url('../images/talleres/hover/elementos-taller-hover-10.png');
+      background-size: cover;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .taller11{
+      width: 100%;
+      height: 10vh;
+      display: block;
+      background-image: url('../images/talleres/normal/elementos-taller-11.png');
+      background-size: cover;
+      background-position: center;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .taller11:hover{
+      width: 100%;
+      height: 10vh;
+      display: block;
+      background-image: url('../images/talleres/hover/elementos-taller-hover-11.png');
+      background-size: cover;
+      background-position: center;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .taller12{
+      width: 50%;
+      height: 15vh;
+      display: block;
+      background-image: url('../images/talleres/normal/elementos-taller-12.png');
+      background-size: cover;
+      background-position: center;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .taller12:hover{
+      width: 50%;
+      height: 15vh;
+      display: block;
+      background-image: url('../images/talleres/hover/elementos-taller-hover-12.png');
+      background-size: cover;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .taller13{
+      width: 50%;
+      height: 15vh;
+      display: block;
+      background-image: url('../images/talleres/normal/elementos-taller-13.png');
+      background-size: cover;
+      background-position: center;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .taller13:hover{
+      width: 50%;
+      height: 15vh;
+      display: block;
+      background-image: url('../images/talleres/hover/elementos-taller-hover-13.png');
+      background-size: cover;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .taller14{
+      width: 50%;
+      height: 15vh;
+      display: block;
+      background-image: url('../images/talleres/normal/elementos-taller-14.png');
+      background-size: cover;
+      background-position: center;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .taller14:hover{
+      width: 50%;
+      height: 15vh;
+      display: block;
+      background-image: url('../images/talleres/hover/elementos-taller-hover-14.png');
+      background-size: cover;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .taller15{
+      width: 50%;
+      height: 15vh;
+      display: block;
+      background-image: url('../images/talleres/normal/elementos-taller-15.png');
+  background-size: cover;
+  background-position: center;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .taller15:hover{
+      width: 50%;
+      height: 15vh;
+      display: block;
+      background-image: url('../images/talleres/hover/elementos-taller-hover-15.png');
+  background-size: cover;
+  background-position: center;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .taller16{
+      width: 50%;
+      height: 15vh;
+      display: block;
+      background-image: url('../images/talleres/normal/elementos-taller-16.png');
+  background-size: cover;
+  background-position: center;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .taller16:hover{
+      width: 50%;
+      height: 15vh;
+      display: block;
+      background-image: url('../images/talleres/hover/elementos-taller-hover-16.png');
+  background-size: cover;
+  background-position: center;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+
+    .taller17{
+      width: 50%;
+      height: 15vh;
+      display: block;
+      background-image: url('../images/talleres/normal/elementos-taller-17.png');
+  background-size: cover;
+  background-position: center;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .taller17:hover{
+      width: 50%;
+      height: 15vh;
+      display: block;
+      background-image: url('../images/talleres/hover/elementos-taller-hover-17.png');
+  background-size: cover;
+  background-position: center;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .taller18{
+      width: 100%;
+      height: 20vh;
+      display: block;
+      background-image: url('../images/talleres/normal/elementos-taller-18.png');
+      background-size: cover;
+      background-position: center;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .taller18:hover{
+      width: 100%;
+      height: 20vh;
+      display: block;
+      background-image: url('../images/talleres/hover/elementos-taller-hover-18.png');
+      background-size: cover;
+      background-position: center;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+
+    .cuadrito {
+      width: 50%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      float: left;
+      z-index: 10;
+      position: relative;
+      scroll-snap-align: none;
+    }
+
+
+    .cuadrito2 {
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      float: left;
+      z-index: 10;
+      position: relative;
+      scroll-snap-align: center;
+    }
+
+    .glitch {
+      font-size: 10vw;
+      font-weight: 700;
+      text-transform: uppercase;
+      position: relative;
+    
+      text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+        -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+        0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+    
+      animation: glitch 500ms infinite;
+    }
+
+    .casi {
+      width: 50%;
+      font-size: 10vw;
+      position: absolute;
+      bottom: 5vh;
+      left: 30%;
+      right: 0;
+    }
+
+
+
+    .proximamente {
+      width: 100%;
+      height: 100vh;
+      background-color: #000;
+      scroll-snap-align: start;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Century;
+      color: #fff;
+      background-image: url(../images/actualidad/fondo-grunge.png);
+      background-size: cover;
+      flex-direction: column;
+    }
+    
+    .mitad-ocelote {
+      width: 100%;
+      height: 40vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .mitad-ocelote > img {
+      width: auto;
+      height: 50vh;
+      max-height: fit-content;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    .footer-rosa {
+      width: 100%;
+      height: 40px;
+      margin-bottom: -10px;
+    }
+    .footer {
+      width: 100%;
+      height: 150px;
+      background-image: url(../images/fondo.png);
+      background-size: auto;
+      position: relative;
+    }
+    .ocelotes-guardianes {
+      width: 95%;
+      height: auto;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+    .frase-footer {
+      width: 75%;
+      height: auto;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+    .copy{
+      width: 100%;
+      height: 50px;
+      font-size: 3vw;
+      padding-top: 15px;
+      text-align: center;
+      font-family: Century;
+      color: white;
+    }
+    .pared-form {
+      position: relative;
+    }
+    .social-media {
+      z-index: 90;
+    }
+    .facebook {
+      width: 12%;
+      height: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-top: 0px;
+      margin-left: 0px;
+    }
+    .twitter {
+      width: 12%;
+      height: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-top: 0px;
+      margin-left: 40px;
+    }
+    .instagram {
+      width: 12%;
+      height: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-top: 0px;
+      margin-left: 80px;
+    }
+    .titulo-form {
+      position: absolute;
+      width: 40%;
+      top: 0;
+      padding-top: 100px;
+      padding-left: 0px;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+      z-index: 50;
+    }
+    .form-div {
+      width: 55%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      padding: 10px 10px 10px 10px;
+    }
+    .form {
+      width: 100%;
+    }
+    .form > input, label, button, textarea {
+      display: block;
+      width: 90%;
+    }
+    .form > label, button {
+      font-family: Century;
+      color: #000;
+      font-size: 2vw;
+      padding-top: 2px;
+      padding-bottom: 2px;
+    }
+    .form > input, button {
+      font-family: Century;
+      color: #fff;
+      font-size: 2vw;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 2px;
+      padding-right: 2px;
+      background-color: rgba(0, 0, 0, 0.8);
+      border: none;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    .form > button:hover {
+      background-color: rgba(200, 200, 200, 1.0);
+      color: #000;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+      cursor: pointer;
+    }
+    .form > textarea {
+      height: 40px;
+      font-family: Century;
+      color: #fff;
+      font-size: 2vw;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 5px;
+      padding-right: 5px;
+      background-color: rgba(0, 0, 0, 0.8);
+      outline: none;
+      border: none;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+
+/* PATROCINIOS STYLE */
+
+.patrocinios {
+  width: 100%;
+  position: relative;
+  float: left;
+  padding-top: 5px;
+  background-color: white;
+  scroll-snap-align: center;
+}
+
+    .programa img {
+      width: 90%;
+      height: auto;
+      text-align: center;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 140px;
+      margin: auto;
+    }
+    
+    .footer-2 {
+        scroll-snap-align: end;
+      }
+    }
